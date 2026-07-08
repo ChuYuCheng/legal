@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隱私權政策 — Stock（股票記帳）</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "PingFang TC", "Helvetica Neue", "Microsoft JhengHei", sans-serif;
+    line-height: 1.75; color: #1c1c1e; background: #f5f5f7;
+    margin: 0; padding: 32px 16px;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; background: #fff;
+    border-radius: 14px; padding: 40px 32px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 2em 0 .4em; padding-top: .6em; border-top: 1px solid #ececec; }
+  h2:first-of-type { border-top: none; }
+  .meta { color: #6e6e73; font-size: .9rem; margin: 0 0 1.4em; }
+  .lead { background: #f0f6ff; border-left: 4px solid #2f7bf6; padding: 14px 16px; border-radius: 8px; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .95rem; }
+  th, td { border: 1px solid #e2e2e5; padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: #fafafa; }
+  code { background: #f0f0f2; padding: 1px 5px; border-radius: 4px; font-size: .9em; }
+  a { color: #2f7bf6; }
+  .foot { margin-top: 2.4em; padding-top: 1em; border-top: 1px solid #ececec; color: #6e6e73; font-size: .85rem; }
+  @media (max-width: 520px) { .wrap { padding: 28px 18px; } body { padding: 16px 8px; } }
+  @media (prefers-color-scheme: dark) {
+    body { background: #000; color: #e6e6e6; }
+    .wrap { background: #1c1c1e; box-shadow: none; }
+    h2 { border-top-color: #333; }
+    .lead { background: #10233f; border-left-color: #4d94ff; }
+    th, td { border-color: #3a3a3c; } th { background: #2c2c2e; }
+    code { background: #2c2c2e; } .foot { border-top-color: #333; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>隱私權政策 Privacy Policy</h1>
+<p class="meta">適用 App：Stock（股票記帳）　·　生效日期：2026 年 7 月 3 日　·　最後更新：2026 年 7 月 3 日</p>
+
+<p class="lead"><strong>核心原則：你的資料留在你的裝置上。</strong>本 App 是一款離線優先的個人持股與交易記帳工具。你輸入的所有財務資料——帳戶、持股、買賣交易、配息、成本與損益——全部只儲存在你自己的裝置本機。開發者不會收集、不會上傳、不會儲存、也無法讀取你的任何個人或財務資料；本 App 沒有帳號系統與雲端伺服器保存你的資料。</p>
+
+<h2>一、我們不收集哪些資料</h2>
+<p>本 App 不會收集下列任何資訊：</p>
+<ul>
+  <li>姓名、電子郵件、電話等身分識別資訊</li>
+  <li>你的持股、交易、配息、損益等財務資料</li>
+  <li>位置、通訊錄、健康、裝置識別碼等資料</li>
+  <li>使用行為分析、崩潰回報等追蹤資料</li>
+</ul>
+<p>本 App <strong>不包含任何使用者追蹤（tracking）</strong>，不會為了廣告目的跨 App 或跨網站追蹤你，也不會請求 App 追蹤透明度（ATT）授權。</p>
+
+<h2>二、資料儲存於何處</h2>
+<ul>
+  <li>你的財務資料儲存在裝置本機的 App 資料區。</li>
+  <li>App 偏好設定（顯示幣別、通知規則、你自行輸入的報價 API 金鑰等）儲存在裝置本機的 <code>UserDefaults</code>。</li>
+  <li>上述資料不會離開你的裝置，除非你主動使用「備份／匯出」功能自行輸出檔案。</li>
+</ul>
+
+<h2>三、App 會連線的第三方服務</h2>
+<p>為了顯示股票即時報價，本 App 會在你開啟或重新整理時，向下列股票報價服務發出查詢：</p>
+<table>
+  <thead><tr><th>服務</th><th>用途</th><th>送出的內容</th></tr></thead>
+  <tbody>
+    <tr><td>Finnhub</td><td>美股報價</td><td>僅送出股票代號（例如 <code>AAPL</code>）與 API 查詢金鑰</td></tr>
+    <tr><td>Yahoo Finance</td><td>台股／美股報價（未設金鑰時的預設來源）</td><td>僅送出股票代號</td></tr>
+  </tbody>
+</table>
+<ul>
+  <li>這些查詢<strong>只送出股票代號</strong>，不含你的姓名、持股數量、成本或任何可識別你身分的資訊。這些服務無法從查詢得知你「持有」該股票，只知道有人查詢了該代號的報價。</li>
+  <li>若你在設定中自行填入 Finnhub API 金鑰，該金鑰只儲存在你的裝置本機，僅用於向 Finnhub 查詢時的驗證，不會傳送給開發者。</li>
+  <li>這些第三方服務有其各自的隱私權政策，其資料處理不在本 App 控制範圍內。</li>
+</ul>
+
+<h2>四、相機與相簿（OCR 匯入）</h2>
+<ul>
+  <li>你透過系統的照片選取器選擇圖片，App 僅取得你選定的該張圖片，不會存取你整個相簿。</li>
+  <li>圖片的文字辨識（OCR）完全在你的裝置上進行，辨識結果與原始圖片不會上傳到任何伺服器。</li>
+</ul>
+
+<h2>五、備份與還原</h2>
+<ul>
+  <li>「備份／匯出」功能產生的檔案由你自行掌控，儲存到你選擇的位置（如「檔案」App、iCloud 雲碟等）。</li>
+  <li>開發者不會接觸這些備份檔案。你將備份檔存放於何處、是否分享，由你自行決定與負責。</li>
+</ul>
+
+<h2>六、通知</h2>
+<p>本 App 的提醒為裝置本機通知，由裝置在本機依你設定的規則觸發，不經過外部推播伺服器，也不會傳送你的資料到外部。</p>
+
+<h2>七、廣告</h2>
+<p>本 App 目前顯示的是內建的自製佔位橫幅，未接入任何第三方廣告 SDK、未使用廣告識別碼（IDFA）、不進行任何追蹤。未來若接入第三方廣告服務，我們會於整合前更新本隱私權政策，明確說明其收集的資料類型與追蹤行為，並在必要時依規定請求你的授權。</p>
+
+<h2>八、兒童隱私</h2>
+<p>本 App 並非針對 13 歲以下兒童設計，也不會刻意收集兒童的個人資料（實際上本 App 不收集任何人的個人資料）。</p>
+
+<h2>九、資料刪除</h2>
+<p>由於你的資料僅存在裝置本機，你可隨時透過解除安裝本 App 來永久刪除所有資料。你也可以在 App 內刪除個別帳戶、交易等紀錄。開發者端沒有任何你的資料需要另外申請刪除。</p>
+
+<h2>十、政策變更</h2>
+<p>我們可能因功能調整而更新本政策。重大變更會更新本頁上方的「最後更新」日期，建議你不定期查閱本頁面。</p>
+
+<h2>十一、聯絡我們</h2>
+<p>若你對本隱私權政策有任何疑問，歡迎聯絡：<br>
+Email：<a href="mailto:chu051105@gmail.com">chu051105@gmail.com</a></p>
+
+<p class="foot">本政策以繁體中文版本為準。</p>
+
+</div>
+</body>
+</html>
