@@ -4,4 +4,4 @@
 
 ## Apps
 
-- **Stock（股票記帳）** — [隱私權政策](https://chuyucheng.github.io/legal/stock-app/)（原始檔：[`stock-app/index.html`](stock-app/index.html)）
+- **FindIt（東西放哪）** — [隱私權政策](https://chuyucheng.github.io/legal/findit/)（原始檔：[`findit/index.html`](findit/index.html)）
